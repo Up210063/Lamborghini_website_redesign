@@ -6,15 +6,20 @@
 }
 
 .carousel {
-    width: 100%; /* Asegura que el carrusel ocupe todo el ancho disponible */
+    width: 90%; /* Ajusta el ancho del carrusel para mejor presentación */
     margin: 0 auto;
 }
 
+.carousel-slide {
+    padding: 0 10px; /* Añade un pequeño espacio entre los slides */
+    overflow: hidden; /* Asegura que el contenido que se salga de la caja no sea visible */
+}
+
 .carousel img {
-    width: 1000px; /* Fijar el ancho de la imagen */
-    height: 500px; /* Fijar la altura de la imagen */
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor del slide */
+    height: 300px; /* Ajusta la altura de todas las imágenes a 300px */
     display: block; /* Asegura que la imagen se comporte como un bloque para que el margin funcione */
-    margin: 0 auto; /* Centrar la imagen dentro del carrusel */
-    border-radius: 10px;
     object-fit: cover; /* Asegura que la imagen cubra el espacio disponible sin deformarse */
+    border-radius: 10px;
+    margin: 0 auto; /* Centrar la imagen dentro del slide */
 }

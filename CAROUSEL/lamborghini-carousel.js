@@ -2,10 +2,10 @@ $(document).ready(function(){
     $('.carousel').slick({
         dots: true, // Muestra puntos de navegación
         infinite: true, // Ciclo infinito
-        speed: 500,
-        slidesToShow: 1, // Cuántos slides mostrar al mismo tiempo
-        slidesToScroll: 1, // Cuántos slides desplazar por vez
+        speed: 2000,
+        slidesToShow: 3, // Cuántos slides mostrar al mismo tiempo
+        slidesToScroll: 2, // Cuántos slides desplazar por vez
         autoplay: true, // Auto-desplazamiento
-        autoplaySpeed: 3000, // Velocidad de auto-desplazamiento en ms
+        autoplaySpeed: 5000, // Velocidad de auto-desplazamiento en ms
     });
 });
