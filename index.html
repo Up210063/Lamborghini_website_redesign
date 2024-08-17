@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lamborghini</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="NAV/lamborghini-navigation.css"> <!-- Archivo CSS para la navegación -->
+    <link rel="stylesheet" href="CAROUSEL/lamborghini-carousel.css"> <!-- Archivo CSS para el carrusel -->
+    <!-- Incluir Slick Carousel CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
     <nav>
@@ -23,10 +27,25 @@
             <li><a href="#historia">Historia</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
-        <img src="lamborghini-logo.png" alt="Lamborghini Logo" class="logo">
+        <img src="IMG/lamborghini-logo.png" alt="Lamborghini Logo" class="logo">
     </nav>
 
-    <!-- Enlace al archivo JavaScript -->
-    <script src="scripts.js"></script>
+    <!-- Sección del Carrusel -->
+    <section class="carousel-container">
+        <div class="carousel">
+            <div><img src="IMG/temerario.png" alt="Temerario"></div>
+            <div><img src="IMG/revuelto.png" alt="Revuelto"></div>
+            <div><img src="IMG/urus.png" alt="Urus"></div>
+            <div><img src="IMG/huracan.png" alt="Huracán"></div>
+            <!-- Añadir más modelos aquí -->
+        </div>
+    </section>
+
+    <!-- Incluir jQuery (necesario para Slick Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Incluir Slick Carousel JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="CAROUSEL/lamborghini-carousel.js"></script> <!-- Archivo JS para el carrusel -->
+    <script src="NAV/navegation-animations.js"></script> <!-- Archivo JS para las animaciones de la navegación -->
 </body>
 </html>

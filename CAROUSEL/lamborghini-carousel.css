@@ -1,0 +1,20 @@
+/* Estilo para la sección del carrusel */
+.carousel-container {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center; /* Centrar el contenido dentro del contenedor del carrusel */
+}
+
+.carousel {
+    width: 100%; /* Asegura que el carrusel ocupe todo el ancho disponible */
+    margin: 0 auto;
+}
+
+.carousel img {
+    width: 1000px; /* Fijar el ancho de la imagen */
+    height: 500px; /* Fijar la altura de la imagen */
+    display: block; /* Asegura que la imagen se comporte como un bloque para que el margin funcione */
+    margin: 0 auto; /* Centrar la imagen dentro del carrusel */
+    border-radius: 10px;
+    object-fit: cover; /* Asegura que la imagen cubra el espacio disponible sin deformarse */
+}
