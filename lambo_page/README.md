@@ -1,33 +1,70 @@
-# 🚀 Rediseño Futurista de la Página de Lamborghini
+# Getting Started with Create React App
 
-## 🌟 Visión del Proyecto
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-El rediseño de la página oficial de Lamborghini tiene como objetivo llevar la experiencia digital al siguiente nivel, combinando elegancia y tecnología avanzada. Este proyecto busca reflejar la esencia de Lamborghini: **velocidad**, **innovación** y **exclusividad**.
+## Available Scripts
 
-## 🖌️ Diseño Futurista
+In the project directory, you can run:
 
-El nuevo diseño contará con una estética futurista, inspirada en las líneas aerodinámicas de los superdeportivos Lamborghini. **Colores vibrantes**, **tipografías minimalistas** y **animaciones dinámicas** serán fundamentales para crear una interfaz que no solo sea visualmente impactante, sino también intuitiva y funcional.
+### `npm start`
 
-## 🚗 Experiencia de Usuario
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Hemos simplificado la estructura para que los usuarios puedan explorar con facilidad todos los modelos y servicios. La página incluirá efectos de **parallax**, transiciones suaves y elementos interactivos que responden al movimiento del usuario. El diseño será completamente responsive, garantizando una experiencia óptima en cualquier dispositivo.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## 💻 Frontend con React
+### `npm test`
 
-El frontend de la nueva página de Lamborghini estará desarrollado con **React**, una de las bibliotecas más poderosas y populares para la construcción de interfaces de usuario modernas. 🚀
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### 🔧 Beneficios de Usar React
+### `npm run build`
 
-Utilizando React, podemos crear componentes modulares que permiten mantener un código limpio y eficiente. Gracias al **Virtual DOM**, la actualización y renderización de la UI serán extremadamente rápidas, asegurando una experiencia fluida para los usuarios. Al estar integrado con otras tecnologías modernas como **Redux** para el manejo del estado global y **React Router** para la navegación, el frontend será escalable y fácil de mantener. Implementaremos **Server-Side Rendering (SSR)** para mejorar el rendimiento de la página en términos de SEO y carga inicial, garantizando que los visitantes puedan acceder rápidamente a los contenidos.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### 🛠️ Herramientas Adicionales
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-**Styled-components** se utilizarán para gestionar los estilos de los componentes de manera eficiente y crear una experiencia visual completamente personalizada y consistente. **Framer Motion** se usará para agregar animaciones y transiciones fluidas, haciendo que la interacción del usuario sea aún más atractiva y envolvente.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## 💡 Características Principales
+### `npm run eject`
 
-Los usuarios podrán personalizar su Lamborghini en tiempo real con un configurador de vehículos en 3D, visualizando cada detalle con un nivel de realismo sin precedentes. Mantendremos a los entusiastas de Lamborghini informados con las últimas novedades de la marca en una sección de noticias y eventos. Compartir la pasión por Lamborghini será más fácil que nunca con botones sociales integrados y contenido exclusivo para seguidores.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## 🌐 Proyecto Personal
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Este rediseño de la página de Lamborghini es un proyecto personal con el objetivo de explorar y demostrar mis habilidades en **diseño web** y **desarrollo frontend** utilizando tecnologías modernas como **React**. Es una muestra de cómo una marca de lujo puede representarse digitalmente con un diseño futurista y una experiencia de usuario de alto nivel.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
