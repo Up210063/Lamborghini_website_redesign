@@ -1,8 +1,9 @@
 /* Estilo para la sección del carrusel */
 .carousel-container {
     padding: 50px 0;
-    background-color: #f4f4f4;
+    background-color: #d3d0d0;
     text-align: center; /* Centrar el contenido dentro del contenedor del carrusel */
+    position: relative;
 }
 
 .carousel {
@@ -12,14 +13,46 @@
 
 .carousel-slide {
     padding: 0 10px; /* Añade un pequeño espacio entre los slides */
-    overflow: hidden; /* Asegura que el contenido que se salga de la caja no sea visible */
+    overflow: visible; /* Permite que el contenido expandido se muestre */
+    position: relative;
 }
 
-.carousel img {
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor del slide */
-    height: 300px; /* Ajusta la altura de todas las imágenes a 300px */
-    display: block; /* Asegura que la imagen se comporte como un bloque para que el margin funcione */
-    object-fit: cover; /* Asegura que la imagen cubra el espacio disponible sin deformarse */
+.vehicle-card {
+    position: relative;
+    overflow: hidden;
     border-radius: 10px;
-    margin: 0 auto; /* Centrar la imagen dentro del slide */
+    transition: transform 0.3s ease-in-out, height 0.3s ease-in-out; /* Suaviza la transición de la transformación */
+}
+
+.vehicle-card img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor del slide */
+    height: 300px; /* Mantén la altura uniforme */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio disponible sin deformarse */
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.vehicle-description {
+    background-color: rgba(0, 0, 0, 0.85); /* Fondo oscuro semi-transparente */
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 0; /* Altura inicial cero, oculta */
+    overflow: hidden; /* Oculta el contenido cuando la altura es cero */
+    transition: height 0.3s ease-in-out; /* Transición suave para la altura */
+}
+
+.vehicle-description h3 {
+    margin: 0;
+    font-size: 19px;
+}
+
+.vehicle-description p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    visibility: hidden; /* Oculta el contenido inicialmente */
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.3s ease-in-out; /* Suaviza la transición de la opacidad */
 }
