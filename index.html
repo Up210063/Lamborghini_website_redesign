@@ -1,221 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lamborghini</title>
-    <!-- Fuentes y Estilos -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="NAV/lamborghini-navigation.css" />
-    <!-- Archivo CSS para la navegación -->
-    <link rel="stylesheet" href="CAROUSEL/lamborghini-carousel.css" />
-    <!-- Archivo CSS para el carrusel -->
-    <link rel="stylesheet" href="COMPARATIVE/lamborghini-comparison.css" />
-    <!-- Archivo CSS para el comparativo de imágenes -->
-    <!-- Slick Carousel CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    />
-    <!-- Estilos Inline -->
-    <style>
-      /* Evita la barra de deslizamiento horizontal */
-      body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        font-family: "Poppins", sans-serif;
-        background-color: #f4f4f4;
-      }
-    </style>
-  </head>
 
-  <body>
-    <!-- Navegación -->
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li>
-          <a href="#modelos">Modelos</a>
-          <ul class="submenu">
-            <li><a href="#urus">Urus</a></li>
-            <li><a href="#huracan">Huracán</a></li>
-            <li><a href="#temerario">Temerario</a></li>
-            <li><a href="#revuelto">Revuelto</a></li>
-          </ul>
-        </li>
-        <li><a href="#historia">Historia</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-      <img
-        src="IMG/lamborghini-logo.png"
-        alt="Lamborghini Logo"
-        class="logo"
-        style="filter: invert(1) brightness(1)"
-      />
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lamborghini</title>
+  <!-- Fuentes y Estilos -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="NAV/lamborghini-navigation.css" />
+  <!-- Archivo CSS para la navegación -->
+  <link rel="stylesheet" href="CAROUSEL/lamborghini-carousel.css" />
+  <!-- Archivo CSS para el carrusel -->
+  <link rel="stylesheet" href="COMPARATIVE/lamborghini-comparison.css" />
+  <!-- Archivo CSS para el comparativo de imágenes -->
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <!-- Estilos Inline -->
+  <style>
+    /* Evita la barra de deslizamiento horizontal */
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: "Poppins", sans-serif;
+      background-color: #f4f4f4;
+    }
+  </style>
+</head>
 
-    <!-- Sección del Carrusel -->
-    <section class="carousel-container">
-      <h2 class="section-title">LEGADO</h2>
-      <div class="carousel">
-        <!-- Slide para Temerario -->
-        <div class="carousel-slide">
-          <div class="vehicle-card">
-            <img src="IMG/temerario.png" alt="Temerario" />
-            <div class="vehicle-description">
-              <h3>TEMERARIO</h3>
-              <p>
-                El Lamborghini Temerario es un vehículo diseñado para desafiar
-                los límites, con un motor poderoso y un diseño aerodinámico
-                único.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Slide para Revuelto -->
-        <div class="carousel-slide">
-          <div class="vehicle-card">
-            <img src="IMG/revuelto.png" alt="Revuelto" />
-            <div class="vehicle-description">
-              <h3>REVUELTO</h3>
-              <p>
-                El Lamborghini Revuelto ofrece una combinación perfecta de
-                velocidad y lujo, con un enfoque en la experiencia de
-                conducción.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Slide para Urus -->
-        <div class="carousel-slide">
-          <div class="vehicle-card">
-            <img src="IMG/urus.png" alt="Urus" />
-            <div class="vehicle-description">
-              <h3>URUS</h3>
-              <p>
-                El Lamborghini Urus redefine el concepto de SUV, combinando el
-                rendimiento de un superdeportivo con la funcionalidad diaria.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Slide para Huracán -->
-        <div class="carousel-slide">
-          <div class="vehicle-card">
-            <img src="IMG/huracan.png" alt="Huracán" />
-            <div class="vehicle-description">
-              <h3>HURACÁN</h3>
-              <p>
-                El Lamborghini Huracán es la representación máxima de velocidad
-                y precisión, ideal para quienes buscan la perfección en cada
-                curva.
-              </p>
-            </div>
+<body>
+  <!-- Navegación -->
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li>
+        <a href="#modelos">Modelos</a>
+        <ul class="submenu">
+          <li><a href="#urus">Urus</a></li>
+          <li><a href="#huracan">Huracán</a></li>
+          <li><a href="#temerario">Temerario</a></li>
+          <li><a href="#revuelto">Revuelto</a></li>
+        </ul>
+      </li>
+      <li><a href="#historia">Historia</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <img src="IMG/lamborghini-logo.png" alt="Lamborghini Logo" class="logo" style="filter: invert(1) brightness(1)" />
+  </nav>
+
+  <!-- Sección del Carrusel -->
+  <section class="carousel-container">
+    <h2 class="section-title">LEGADO</h2>
+    <div class="carousel">
+      <!-- Slide para Temerario -->
+      <div class="carousel-slide">
+        <div class="vehicle-card temerario">
+          <img src="IMG/temerario.png" alt="Temerario" />
+          <div class="vehicle-description">
+            <h3>TEMERARIO</h3>
+            <p>
+              El Lamborghini Temerario es un vehículo diseñado para desafiar
+              los límites, con un motor poderoso y un diseño aerodinámico
+              único.
+            </p>
           </div>
         </div>
       </div>
-      <!-- Botones de navegación personalizados -->
-      <button class="slick-prev">&lt;</button>
-      <button class="slick-next">&gt;</button>
-    </section>
-
-    <!-- Sección de Línea de Evolución -->
-    <section class="evolution-section">
-      <h2 class="section-title">Línea de Evolución</h2>
-      <p class="section-description">
-        Descubre la evolución de los modelos de Lamborghini a lo largo de los
-        años.
-      </p>
-      <div class="timeline">
-        <!-- Hito 1 -->
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h3>1966 - Lamborghini Miura</h3>
-            <img src="IMG/Comparative/THEN.png" alt="Lamborghini Miura" />
+      <!-- Slide para Revuelto -->
+      <div class="carousel-slide">
+        <div class="vehicle-card revuelto">
+          <img src="IMG/revuelto.png" alt="Revuelto" />
+          <div class="vehicle-description">
+            <h3>REVUELTO</h3>
             <p>
-              El Miura, presentado en 1966, fue uno de los primeros
-              superdeportivos de Lamborghini y revolucionó el mundo automotriz
-              con su diseño de motor central.
+              El Lamborghini Revuelto ofrece una combinación perfecta de
+              velocidad y lujo, con un enfoque en la experiencia de
+              conducción.
             </p>
           </div>
         </div>
-        <!-- Hito 2 -->
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h3>1973 - Espada Series III</h3>
-            <img
-              src="IMG/Comparative/NOW.jpg"
-              alt="Lamborghini Terzo Millennio"
-            />
-            <p>
-              Este suizo europeo suministró 1973 Lamborghini Espada es uno de la
-              siempre popular tercera serie. Este automóvil de tres propietarios
-              solo ha acumulado 45,000 millas certificadas. Es un coche
-              sumamente original. La carrocería sólida está libre de óxido y
-              tiene un ajuste perfecto en los paneles de la carrocería. En el
-              pasado tuvo un re-rociado cosmético. Mecánicamente sólido y en
-              perfecto estado de funcionamiento y conducción. Tiene su original
-              tapizado interior de cuero marrón claro y arena. Tiene el aire
-              acondicionado y llantas originales.
-            </p>
-          </div>
-        </div>
-        <!-- Hito 3 -->
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h3>1979 - Countach LP400S</h3>
-            <img
-              src="IMG/Comparative/NOW.jpg"
-              alt="Lamborghini Terzo Millennio"
-            />
-            <p>
-              El Lamborghini Countach es un automóvil deportivo
-              berlinetta producido por el fabricante italiano Lamborghini desde
-              1974 hasta 1990, con carrocería hecha de aluminio y fibra de
-              vidrio, tracción trasera y un motor V12 de gasolina, inicialmente
-              con una cilindrada de 3929 cm³ (3,9 litros) y finalmente de 5167
-              cm³ (5,2 litros).
-            </p>
-          </div>
-        </div>
-        <!-- Hito 4 -->
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h3>2021 - Lamborghini Terzo Millennio</h3>
-            <img
-              src="IMG/Comparative/NOW.jpg"
-              alt="Lamborghini Terzo Millennio"
-            />
-            <p>
-              El Terzo Millennio es un concepto futurista que explora nuevas
-              fronteras en el diseño y la tecnología de los superdeportivos, con
-              un enfoque en la energía eléctrica y los materiales avanzados.
-            </p>
-          </div>
-        </div>
-        <!-- Puedes añadir más hitos aquí -->
       </div>
-    </section>
+      <!-- Slide para Urus -->
+      <div class="carousel-slide">
+        <div class="vehicle-card urus">
+          <img src="IMG/urus.png" alt="Urus" />
+          <div class="vehicle-description">
+            <h3>URUS</h3>
+            <p>
+              El Lamborghini Urus redefine el concepto de SUV, combinando el
+              rendimiento de un superdeportivo con la funcionalidad diaria.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Slide para Huracán -->
+      <div class="carousel-slide">
+        <div class="vehicle-card huracan">
+          <img src="IMG/huracan.png" alt="Huracán" />
+          <div class="vehicle-description">
+            <h3>HURACÁN</h3>
+            <p>
+              El Lamborghini Huracán es la representación máxima de velocidad
+              y precisión, ideal para quienes buscan la perfección en cada
+              curva.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Botones de navegación personalizados -->
+    <button class="slick-prev">&lt;</button>
+    <button class="slick-next">&gt;</button>
+  </section>
 
-    <!-- Scripts -->
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Slick Carousel JS -->
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <!-- Scripts Personalizados -->
-    <script src="NAV/navigation-animations.js"></script>
-    <!-- Archivo JS para las animaciones de la navegación -->
-    <script src="CAROUSEL/lamborghini-carousel.js"></script>
-    <!-- Archivo JS para el carrusel -->
-    <script src="COMPARATIVE/lamborghini-comparison.js"></script>
-    <!-- Archivo JS para el comparativo de imágenes -->
-  </body>
+  <!-- Sección de Línea de Evolución -->
+  <section class="evolution-section">
+    <h2 class="section-title">Línea de Evolución</h2>
+    <p class="section-description">
+      Descubre la evolución de los modelos de Lamborghini a lo largo de los
+      años.
+    </p>
+    <div class="timeline">
+      <!-- Hito 1 -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>1966 - Lamborghini Miura</h3>
+          <img src="IMG/Comparative/THEN.png" alt="Lamborghini Miura" />
+          <p>
+            El Miura, presentado en 1966, fue uno de los primeros
+            superdeportivos de Lamborghini y revolucionó el mundo automotriz
+            con su diseño de motor central.
+          </p>
+        </div>
+      </div>
+      <!-- Hito 2 -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>1973 - Espada Series III</h3>
+          <img src="IMG/Comparative/NOW.jpg" alt="Lamborghini Terzo Millennio" />
+          <p>
+            Este suizo europeo suministró 1973 Lamborghini Espada es uno de la
+            siempre popular tercera serie. Este automóvil de tres propietarios
+            solo ha acumulado 45,000 millas certificadas. Es un coche
+            sumamente original. La carrocería sólida está libre de óxido y
+            tiene un ajuste perfecto en los paneles de la carrocería. En el
+            pasado tuvo un re-rociado cosmético. Mecánicamente sólido y en
+            perfecto estado de funcionamiento y conducción. Tiene su original
+            tapizado interior de cuero marrón claro y arena. Tiene el aire
+            acondicionado y llantas originales.
+          </p>
+        </div>
+      </div>
+      <!-- Hito 3 -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>1979 - Countach LP400S</h3>
+          <img src="IMG/Comparative/NOW.jpg" alt="Lamborghini Terzo Millennio" />
+          <p>
+            El Lamborghini Countach es un automóvil deportivo
+            berlinetta producido por el fabricante italiano Lamborghini desde
+            1974 hasta 1990, con carrocería hecha de aluminio y fibra de
+            vidrio, tracción trasera y un motor V12 de gasolina, inicialmente
+            con una cilindrada de 3929 cm³ (3,9 litros) y finalmente de 5167
+            cm³ (5,2 litros).
+          </p>
+        </div>
+      </div>
+      <!-- Hito 4 -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>2021 - Lamborghini Terzo Millennio</h3>
+          <img src="IMG/Comparative/NOW.jpg" alt="Lamborghini Terzo Millennio" />
+          <p>
+            El Terzo Millennio es un concepto futurista que explora nuevas
+            fronteras en el diseño y la tecnología de los superdeportivos, con
+            un enfoque en la energía eléctrica y los materiales avanzados.
+          </p>
+        </div>
+      </div>
+      <!-- Puedes añadir más hitos aquí -->
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Slick Carousel JS -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- Scripts Personalizados -->
+  <script src="NAV/navigation-animations.js"></script>
+  <!-- Archivo JS para las animaciones de la navegación -->
+  <script src="CAROUSEL/lamborghini-carousel.js"></script>
+  <!-- Archivo JS para el carrusel -->
+  <script src="COMPARATIVE/lamborghini-comparison.js"></script>
+  <!-- Archivo JS para el comparativo de imágenes -->
+</body>
+
 </html>
