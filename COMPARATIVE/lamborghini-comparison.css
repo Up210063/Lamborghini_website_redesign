@@ -1,5 +1,4 @@
 /* Estilos para la sección de evolución */
-
 .evolution-section {
     padding: 50px 20px;
     background-color: #fff;
@@ -21,34 +20,33 @@
 .timeline {
     position: relative;
     max-width: 800px;
-    height: 500px; /* Aumenta la altura del contenedor para mostrar toda la imagen */
+    height: 700px; /* Aumenta la altura del contenedor para mostrar toda la imagen */
     margin: 0 auto;
     overflow: hidden; /* Oculta los elementos que están fuera de la vista */
 }
 
-
 .timeline-item {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0; /* Empieza fuera de la vista, a la derecha */
     width: 100%;
     background-color: inherit;
     border-radius: 10px;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(20px);
+    transform: translateX(20px); /* Inicia fuera de la vista en el eje X */
     transition: opacity 1s ease, visibility 1s ease, transform 1s ease;
 }
 
 .timeline-item.show {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
+    transform: translateX(0); /* Se mueve a la vista de manera suave desde la derecha */
 }
 
 .timeline-content {
     padding: 20px;
-    background-color: white;
+    background-color: rgb(191, 191, 191);
     border-radius: 10px;
     position: relative;
 }
@@ -58,4 +56,13 @@
     height: auto;
     margin-bottom: 20px;
     border-radius: 10px;
+}
+
+/* Estilo para el contador de tiempo */
+.timer {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
 }
