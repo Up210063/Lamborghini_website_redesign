@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lamborghini</title>
+    <!-- Fuentes y Estilos -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="NAV/lamborghini-navigation.css"> <!-- Archivo CSS para la navegación -->
     <link rel="stylesheet" href="CAROUSEL/lamborghini-carousel.css"> <!-- Archivo CSS para el carrusel -->
-    <!-- Incluir Slick Carousel CSS -->
+    <link rel="stylesheet" href="COMPARATIVE/lamborghini-comparison.css">
+    <!-- Archivo CSS para el comparativo de imágenes -->
+    <!-- Slick Carousel CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-
+    <!-- Estilos Inline -->
     <style>
         /* Evita la barra de deslizamiento horizontal */
         body {
@@ -19,11 +22,13 @@
             padding: 0;
             overflow-x: hidden;
             font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
         }
     </style>
 </head>
 
 <body>
+    <!-- Navegación -->
     <nav>
         <ul>
             <li><a href="#inicio">Inicio</a></li>
@@ -44,11 +49,7 @@
 
     <!-- Sección del Carrusel -->
     <section class="carousel-container">
-        <!-- Título LEGADO -->
-        <h2 style="text-align: center; font-family: 'Poppins', sans-serif; font-weight: 600; margin-bottom: 20px;">
-            LEGADO
-        </h2>
-
+        <h2 class="section-title">LEGADO</h2>
         <div class="carousel">
             <!-- Slide para Temerario -->
             <div class="carousel-slide">
@@ -100,12 +101,65 @@
         <button class="slick-next">&gt;</button>
     </section>
 
-    <!-- Incluir jQuery (necesario para Slick Carousel) -->
+    <!-- Sección de Línea de Evolución -->
+    <section class="evolution-section">
+        <h2 class="section-title">Línea de Evolución</h2>
+        <p class="section-description">Descubre la evolución de los modelos de Lamborghini a lo largo de los años.</p>
+        <div class="timeline">
+            <!-- Hito 1 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>1966 - Lamborghini Miura</h3>
+                    <img src="IMG/Comparative/THEN.png" alt="Lamborghini Miura">
+                    <p>El Miura, presentado en 1966, fue uno de los primeros superdeportivos de Lamborghini y
+                        revolucionó el mundo automotriz con su diseño de motor central.</p>
+                </div>
+            </div>
+            <!-- Hito 2 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2021 - Lamborghini Terzo Millennio</h3>
+                    <img src="IMG/Comparative/NOW.jpg" alt="Lamborghini Terzo Millennio">
+                    <p>El Terzo Millennio es un concepto futurista que explora nuevas fronteras en el diseño y la
+                        tecnología de los superdeportivos, con un enfoque en la energía eléctrica y los materiales
+                        avanzados.</p>
+                </div>
+            </div>
+            <!-- Hito 3 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2021 - Lamborghini Terzo Millennio</h3>
+                    <img src="IMG/Comparative/NOW.jpg" alt="Lamborghini Terzo Millennio">
+                    <p>El Terzo Millennio es un concepto futurista que explora nuevas fronteras en el diseño y la
+                        tecnología de los superdeportivos, con un enfoque en la energía eléctrica y los materiales
+                        avanzados.</p>
+                </div>
+            </div>
+            <!-- Hito 4 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2021 - Lamborghini Terzo Millennio</h3>
+                    <img src="IMG/Comparative/NOW.jpg" alt="Lamborghini Terzo Millennio">
+                    <p>El Terzo Millennio es un concepto futurista que explora nuevas fronteras en el diseño y la
+                        tecnología de los superdeportivos, con un enfoque en la energía eléctrica y los materiales
+                        avanzados.</p>
+                </div>
+            </div>
+            <!-- Puedes añadir más hitos aquí -->
+        </div>
+    </section>
+
+
+
+    <!-- Scripts -->
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Incluir Slick Carousel JS -->
+    <!-- Slick Carousel JS -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Scripts Personalizados -->
+    <script src="NAV/navigation-animations.js"></script> <!-- Archivo JS para las animaciones de la navegación -->
     <script src="CAROUSEL/lamborghini-carousel.js"></script> <!-- Archivo JS para el carrusel -->
-    <script src="NAV/navegation-animations.js"></script> <!-- Archivo JS para las animaciones de la navegación -->
+    <script src="COMPARATIVE/lamborghini-comparison.js"></script> <!-- Archivo JS para el comparativo de imágenes -->
 </body>
 
 </html>

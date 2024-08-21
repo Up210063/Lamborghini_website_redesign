@@ -1,0 +1,61 @@
+/* Estilos para la sección de evolución */
+
+.evolution-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    height: 500px; /* Aumenta la altura del contenedor para mostrar toda la imagen */
+    margin: 0 auto;
+    overflow: hidden; /* Oculta los elementos que están fuera de la vista */
+}
+
+
+.timeline-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: inherit;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 1s ease, visibility 1s ease, transform 1s ease;
+}
+
+.timeline-item.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.timeline-content {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+}
+
+.timeline-content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
