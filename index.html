@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,20 @@
     <link rel="stylesheet" href="NAV/lamborghini-navigation.css"> <!-- Archivo CSS para la navegación -->
     <link rel="stylesheet" href="CAROUSEL/lamborghini-carousel.css"> <!-- Archivo CSS para el carrusel -->
     <!-- Incluir Slick Carousel CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <style>
+        /* Evita la barra de deslizamiento horizontal */
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
+
 <body>
     <nav>
         <ul>
@@ -32,52 +44,61 @@
 
     <!-- Sección del Carrusel -->
     <section class="carousel-container">
-    <div class="carousel">
-        <!-- Slide para Temerario -->
-        <div class="carousel-slide">
-            <div class="vehicle-card">
-                <img src="IMG/temerario.png" alt="Temerario">
-                <div class="vehicle-description">
-                    <h3>TEMERARIO</h3>
-                    <p>El Lamborghini Temerario es un vehículo diseñado para desafiar los límites, con un motor poderoso y un diseño aerodinámico único.</p>
+        <!-- Título LEGADO -->
+        <h2 style="text-align: center; font-family: 'Poppins', sans-serif; font-weight: 600; margin-bottom: 20px;">
+            LEGADO
+        </h2>
+
+        <div class="carousel">
+            <!-- Slide para Temerario -->
+            <div class="carousel-slide">
+                <div class="vehicle-card">
+                    <img src="IMG/temerario.png" alt="Temerario">
+                    <div class="vehicle-description">
+                        <h3>TEMERARIO</h3>
+                        <p>El Lamborghini Temerario es un vehículo diseñado para desafiar los límites, con un motor
+                            poderoso y un diseño aerodinámico único.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide para Revuelto -->
+            <div class="carousel-slide">
+                <div class="vehicle-card">
+                    <img src="IMG/revuelto.png" alt="Revuelto">
+                    <div class="vehicle-description">
+                        <h3>REVUELTO</h3>
+                        <p>El Lamborghini Revuelto ofrece una combinación perfecta de velocidad y lujo, con un enfoque
+                            en la experiencia de conducción.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide para Urus -->
+            <div class="carousel-slide">
+                <div class="vehicle-card">
+                    <img src="IMG/urus.png" alt="Urus">
+                    <div class="vehicle-description">
+                        <h3>URUS</h3>
+                        <p>El Lamborghini Urus redefine el concepto de SUV, combinando el rendimiento de un
+                            superdeportivo con la funcionalidad diaria.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide para Huracán -->
+            <div class="carousel-slide">
+                <div class="vehicle-card">
+                    <img src="IMG/huracan.png" alt="Huracán">
+                    <div class="vehicle-description">
+                        <h3>HURACÁN</h3>
+                        <p>El Lamborghini Huracán es la representación máxima de velocidad y precisión, ideal para
+                            quienes buscan la perfección en cada curva.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Slide para Revuelto -->
-        <div class="carousel-slide">
-            <div class="vehicle-card">
-                <img src="IMG/revuelto.png" alt="Revuelto">
-                <div class="vehicle-description">
-                    <h3>REVUELTO</h3>
-                    <p>El Lamborghini Revuelto ofrece una combinación perfecta de velocidad y lujo, con un enfoque en la experiencia de conducción.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Slide para Urus -->
-        <div class="carousel-slide">
-            <div class="vehicle-card">
-                <img src="IMG/urus.png" alt="Urus">
-                <div class="vehicle-description">
-                    <h3>URUS</h3>
-                    <p>El Lamborghini Urus redefine el concepto de SUV, combinando el rendimiento de un superdeportivo con la funcionalidad diaria.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Slide para Huracán -->
-        <div class="carousel-slide">
-            <div class="vehicle-card">
-                <img src="IMG/huracan.png" alt="Huracán">
-                <div class="vehicle-description">
-                    <h3>HURACÁN</h3>
-                    <p>El Lamborghini Huracán es la representación máxima de velocidad y precisión, ideal para quienes buscan la perfección en cada curva.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Botones de navegación personalizados -->
-    <button class="slick-prev">&lt;</button>
-    <button class="slick-next">&gt;</button>
-</section>
+        <!-- Botones de navegación personalizados -->
+        <button class="slick-prev">&lt;</button>
+        <button class="slick-next">&gt;</button>
+    </section>
 
     <!-- Incluir jQuery (necesario para Slick Carousel) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -86,4 +107,5 @@
     <script src="CAROUSEL/lamborghini-carousel.js"></script> <!-- Archivo JS para el carrusel -->
     <script src="NAV/navegation-animations.js"></script> <!-- Archivo JS para las animaciones de la navegación -->
 </body>
+
 </html>
