@@ -1,4 +1,4 @@
-/* Estilos para la sección de evolución */
+/* Estilos generales */
 .evolution-section {
     padding: 50px 20px;
     background-color: #fff;
@@ -7,48 +7,109 @@
 
 .section-title {
     font-size: 2.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #333;
 }
 
 .section-description {
     font-size: 1.2rem;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color: #666;
+}
+
+#slide-timer {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.timeline-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    max-width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .timeline {
     position: relative;
-    max-width: 800px;
-    height: 700px; /* Aumenta la altura del contenedor para mostrar toda la imagen */
-    margin: 0 auto;
-    overflow: hidden; /* Oculta los elementos que están fuera de la vista */
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    padding: 20px;
+}
+
+.small-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    background-color: #f4f4f4;
+    opacity: 0.8;
+    transition: all 0.5s ease;
+    text-align: center;
+    padding: 20px;
+    z-index: 0;
+}
+
+.small-slide img {
+    max-width: 100%;
+    max-height: 150px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.small-slide-description {
+    font-size: 0.9rem;
+    color: #333;
+    overflow: hidden;
+    padding: 10px;
+    height: auto;
+}
+
+.small-slide h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.small-slide-left {
+    margin-right: 20px;
+}
+
+.small-slide-right {
+    margin-left: 20px;
 }
 
 .timeline-item {
     position: absolute;
-    top: 0;
-    left: 0; /* Empieza fuera de la vista, a la derecha */
+    top: 50%;
+    left: 50%;
     width: 100%;
-    background-color: inherit;
-    border-radius: 10px;
+    transform: translate(-50%, -50%) scale(1);
     opacity: 0;
     visibility: hidden;
-    transform: translateX(20px); /* Inicia fuera de la vista en el eje X */
-    transition: opacity 1s ease, visibility 1s ease, transform 1s ease;
+    transition: all 0.5s ease;
 }
 
-.timeline-item.show {
+.timeline-item.active {
     opacity: 1;
     visibility: visible;
-    transform: translateX(0); /* Se mueve a la vista de manera suave desde la derecha */
+    transform: translate(-50%, -50%) scale(1.15);
+    z-index: 2;
 }
 
 .timeline-content {
-    padding: 20px;
-    background-color: rgb(191, 191, 191);
-    border-radius: 10px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 40px;
 }
 
 .timeline-content img {
@@ -58,11 +119,22 @@
     border-radius: 10px;
 }
 
-/* Estilo para el contador de tiempo */
-.timer {
-    font-size: 1.2rem;
+.timeline-content h3, .timeline-content p {
+    margin: 0;
+    padding: 0;
     color: #333;
-    margin-bottom: 20px;
-    font-weight: bold;
     text-align: center;
+}
+
+.timeline-content h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.timeline-content p {
+    font-size: 0.9rem;
+    padding: 0 40px;
+    line-height: 1.4;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
