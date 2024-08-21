@@ -12,17 +12,17 @@ El nuevo diseño contará con una estética futurista, inspirada en las líneas 
 
 Hemos simplificado la estructura para que los usuarios puedan explorar con facilidad todos los modelos y servicios. La página incluirá efectos de **parallax**, transiciones suaves y elementos interactivos que responden al movimiento del usuario. El diseño será completamente responsive, garantizando una experiencia óptima en cualquier dispositivo.
 
-## 💻 Frontend con React
+## 💻 Frontend con HTML, CSS y JavaScript
 
-El frontend de la nueva página de Lamborghini estará desarrollado con **React**, una de las bibliotecas más poderosas y populares para la construcción de interfaces de usuario modernas. 🚀
+El frontend de la nueva página de Lamborghini será desarrollado utilizando **HTML**, **CSS** y **JavaScript**, tecnologías fundamentales para la creación de páginas web modernas y atractivas.
 
-### 🔧 Beneficios de Usar React
+### 🔧 Beneficios de Usar HTML, CSS y JavaScript
 
-Utilizando React, podemos crear componentes modulares que permiten mantener un código limpio y eficiente. Gracias al **Virtual DOM**, la actualización y renderización de la UI serán extremadamente rápidas, asegurando una experiencia fluida para los usuarios. Al estar integrado con otras tecnologías modernas como **Redux** para el manejo del estado global y **React Router** para la navegación, el frontend será escalable y fácil de mantener. Implementaremos **Server-Side Rendering (SSR)** para mejorar el rendimiento de la página en términos de SEO y carga inicial, garantizando que los visitantes puedan acceder rápidamente a los contenidos.
+Utilizando HTML para la estructura del contenido, CSS para el diseño y estilo, y JavaScript para la interactividad, podemos crear una página web dinámica y receptiva. Estas tecnologías permiten un desarrollo ágil y personalizable, asegurando que la página no solo sea rápida y eficiente, sino también accesible desde cualquier dispositivo. Implementaremos **transiciones CSS** y **animaciones** para mejorar la fluidez de la navegación, y **JavaScript** se encargará de gestionar la lógica de la página y las interacciones del usuario.
 
 ### 🛠️ Herramientas Adicionales
 
-**Styled-components** se utilizarán para gestionar los estilos de los componentes de manera eficiente y crear una experiencia visual completamente personalizada y consistente. **Framer Motion** se usará para agregar animaciones y transiciones fluidas, haciendo que la interacción del usuario sea aún más atractiva y envolvente.
+**CSS Grid** y **Flexbox** se utilizarán para crear un diseño flexible y adaptable, que se vea bien en cualquier pantalla. **JavaScript** nos permitirá agregar interacciones avanzadas, como el configurador de vehículos en 3D, y **CSS Variables** se emplearán para mantener una coherencia visual a lo largo de todo el sitio.
 
 ## 💡 Características Principales
 
@@ -30,4 +30,4 @@ Los usuarios podrán personalizar su Lamborghini en tiempo real con un configura
 
 ## 🌐 Proyecto Personal
 
-Este rediseño de la página de Lamborghini es un proyecto personal con el objetivo de explorar y demostrar mis habilidades en **diseño web** y **desarrollo frontend** utilizando tecnologías modernas como **React**. Es una muestra de cómo una marca de lujo puede representarse digitalmente con un diseño futurista y una experiencia de usuario de alto nivel.
+Este rediseño de la página de Lamborghini es un proyecto personal con el objetivo de explorar y demostrar mis habilidades en **diseño web** y **desarrollo frontend** utilizando tecnologías clave como **HTML**, **CSS** y **JavaScript**. Es una muestra de cómo una marca de lujo puede representarse digitalmente con un diseño futurista y una experiencia de usuario de alto nivel.
