@@ -50,11 +50,12 @@
     width: 20%;
     height: 100%;
     background-color: #f4f4f4;
-    opacity: 0.8;
-    transition: all 0.5s ease;
+    opacity: 0.9;
+    transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
     text-align: center;
     padding: 20px;
     z-index: 0;
+    transform: scale(1);
 }
 
 .small-slide img {
@@ -94,7 +95,7 @@
     transform: translate(-50%, -50%) scale(1);
     opacity: 0;
     visibility: hidden;
-    transition: all 0.5s ease;
+    transition: all 1.2s ease-in-out; /* Aumenta el tiempo de la transición para el central */
 }
 
 .timeline-item.active {
@@ -129,12 +130,15 @@
 .timeline-content h3 {
     font-size: 2rem;
     margin-bottom: 15px;
+    padding-top: 50px;
 }
 
 .timeline-content p {
     font-size: 0.9rem;
-    padding: 0 40px;
     line-height: 1.4;
     margin-top: 15px;
-    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 100px; /* Incrementa el espacio hacia abajo */
+    padding-bottom: 50px; /* Añade padding para dar más espacio interno */
 }

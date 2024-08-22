@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     // Recuperar el índice actual del almacenamiento local o iniciar en 0
     let currentIndex = localStorage.getItem('currentIndex') ? parseInt(localStorage.getItem('currentIndex')) : 0;
-    let timeLeft = 5; // Tiempo inicial para cada slide (en segundos)
+    let timeLeft = 7; // Tiempo inicial para cada slide (en segundos)
 
     const showItems = (index) => {
         timelineItems.forEach((item, i) => {
@@ -20,13 +20,26 @@ document.addEventListener('DOMContentLoaded', function () {
         const prevIndex = (index - 1 + timelineItems.length) % timelineItems.length;
         const nextIndex = (index + 1) % timelineItems.length;
 
-        // Actualizar el contenedor izquierdo
+        // Aplicar la animación "soft" a todos los contenedores
+        smallSlideLeft.style.transition = 'transform 0.8s ease-in-out, opacity 0.8s ease-in-out';
+        smallSlideRight.style.transition = 'transform 0.8s ease-in-out, opacity 0.8s ease-in-out';
+        timelineItems[index].style.transition = 'transform 0.8s ease-in-out, opacity 0.8s ease-in-out';
+
+        // Animar y actualizar el contenedor izquierdo
+        smallSlideLeft.style.transform = 'scale(0.97)';
         smallSlideLeft.querySelector('.small-slide-image').src = timelineItems[prevIndex].querySelector('img').src;
         smallSlideLeft.querySelector('.small-slide-description').innerHTML = timelineItems[prevIndex].querySelector('p').innerHTML;
+        setTimeout(() => {
+            smallSlideLeft.style.transform = 'scale(1)';
+        }, 800);
 
-        // Actualizar el contenedor derecho
+        // Animar y actualizar el contenedor derecho
+        smallSlideRight.style.transform = 'scale(0.97)';
         smallSlideRight.querySelector('.small-slide-image').src = timelineItems[nextIndex].querySelector('img').src;
         smallSlideRight.querySelector('.small-slide-description').innerHTML = timelineItems[nextIndex].querySelector('p').innerHTML;
+        setTimeout(() => {
+            smallSlideRight.style.transform = 'scale(1)';
+        }, 800);
 
         // Actualizar el índice en localStorage
         localStorage.setItem('currentIndex', currentIndex);
@@ -41,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 clearInterval(interval);
                 currentIndex = (currentIndex + 1) % timelineItems.length;
                 showItems(currentIndex);
-                timeLeft = 5;
+                timeLeft = 7;
                 countdown();
             }
         }, 1000);
