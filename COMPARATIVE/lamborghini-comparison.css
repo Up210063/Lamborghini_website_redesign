@@ -130,7 +130,8 @@
 .timeline-content h3 {
     font-size: 2rem;
     margin-bottom: 15px;
-    padding-top: 50px;
+    margin-top: 110px;
+    padding-top: 80px;
 }
 
 .timeline-content p {
@@ -139,6 +140,6 @@
     margin-top: 15px;
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 100px; /* Incrementa el espacio hacia abajo */
-    padding-bottom: 50px; /* Añade padding para dar más espacio interno */
+    margin-bottom: 150px; /* Incrementa el espacio hacia abajo */
+    padding-bottom: 90px; /* Añade padding para dar más espacio interno */
 }
