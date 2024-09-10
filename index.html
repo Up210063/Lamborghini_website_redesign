@@ -17,6 +17,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   <!-- Estilos Inline -->
+  <link rel="stylesheet" href="mapa-lamborghini.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
   <style>
     /* Evita la barra de deslizamiento horizontal */
     body {
@@ -274,6 +277,24 @@
     </div>
   </section>
 
+  <section class="map-section">
+    <h2>Distribuidores Oficiales de Lamborghini</h2>
+    <div class="map-container">
+      <div id="map"></div>
+      <div id="info-panel" class="info-panel">
+        <button id="close-btn" class="close-btn">&times;</button>
+        <h3 id="info-title">Información</h3>
+        <img id="info-image" src="" alt="Imagen" />
+        <p id="info-description">Descripción</p>
+        <p id="info-coordinates">Coordenadas: </p>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="mapa-lamborghini.js"></script>
+  </section>
+
   <!-- Scripts -->
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -286,6 +307,7 @@
   <!-- Archivo JS para el carrusel -->
   <script src="COMPARATIVE/lamborghini-comparison.js"></script>
   <!-- Archivo JS para el comparativo de imágenes -->
+
 </body>
 
 </html>

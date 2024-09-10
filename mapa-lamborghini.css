@@ -1,0 +1,81 @@
+/* Estilos para la sección del mapa */
+.map-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+  }
+  
+  .map-container {
+    display: flex;
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  /* Estilo para el mapa */
+  #map {
+    flex: 2;
+    height: 100%;
+  }
+  
+  /* Estilo para el panel lateral */
+  .info-panel {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 2px solid #ccc;
+    height: 100%;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    display: none; /* Ocultar por defecto */
+    position: relative;
+  }
+  
+  .info-panel img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .info-panel h3 {
+    margin-top: 0;
+  }
+  
+  .info-panel p {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .info-panel .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  .distributor-icon {
+    background-color: #ff5722;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+  }
+  
