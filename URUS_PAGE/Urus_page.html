@@ -9,36 +9,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="NAV/lamborghini-navigation.css" />
     <!-- Archivo CSS para la navegación -->
-    <link rel="stylesheet" href="CAROUSEL/lamborghini-carousel.css" />
-    <!-- Archivo CSS para el carrusel -->
-    <link rel="stylesheet" href="COMPARATIVE/lamborghini-comparison.css" />
-    <!-- Archivo CSS para el comparativo de imágenes -->
-    <!-- Slick Carousel CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    <!-- Estilos Inline -->
-    <link rel="stylesheet" href="mapa-lamborghini.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="MODELOS/Models.css">
 
-    <style>
-        /* Evita la barra de deslizamiento horizontal */
-        body {
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-            font-family: "Poppins", sans-serif;
-            background-color: #f4f4f4;
-        }
-    </style>
 </head>
 
 <body>
     <!-- Navegación -->
     <nav>
         <ul>
-            <li><a href="../index.html">Inicio</a></li> <!-- Ajuste aquí -->
+            <li><a href="../index.html">Inicio</a></li>
             <li>
-                <a href="#modelos">Modelos</a>
+                <a>Modelos</a>
                 <ul class="submenu">
                     <li><a href="/URUS_PAGE/Urus_page.html">Urus</a></li>
                     <li><a href="#huracan">Huracán</a></li>
@@ -49,10 +30,52 @@
             <li><a href="#historia">Historia</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
-        <img src="IMG/lamborghini-logo.png" alt="Lamborghini Logo" class="logo"
+        <img src="../IMG/lamborghini-logo.png" alt="Lamborghini Logo" class="logo"
             style="filter: invert(1) brightness(1)" />
     </nav>
- 
+
+    <!-- Cards de modelos -->
+    <div class="card-container">
+        <!-- Card 1: Lamborghini Urus -->
+        <div class="card">
+            <img class="image-urus"
+                src="https://img.sm360.ca/ir/w640h390c/images/newcar/ca/2022/lamborghini/urus/base-urus/suv/exteriorColors/2022_lamborghini_urus_032_l1l1.png"
+                alt="Lamborghini Urus">
+            <div class="card-title">Lamborghini Urus</div>
+            <div class="card-description">El Urus es el primer SUV de Lamborghini, ofreciendo un equilibrio perfecto
+                entre rendimiento, lujo y tecnología.</div>
+        </div>
+
+        <!-- Card 2: Lamborghini Urus S -->
+        <div class="card">
+            <img class="image-urus-s"
+                src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_gw/urus/2023/model_chooser/urus_s_m.jpg"
+                alt="Lamborghini Urus S">
+            <div class="card-title">Lamborghini Urus S</div>
+            <div class="card-description">El Urus S es un SUV de alto rendimiento, ofreciendo lujo y potencia en un solo
+                paquete.</div>
+        </div>
+
+        <!-- Card 3: Lamborghini Urus Performante -->
+        <div class="card">
+            <img class="image-urus-performante"
+                src="https://assets.gqindia.com/photos/657c06df969d6c747b20ad75/master/w_1600%2Cc_limit/Lamborghini-Urus.jpg"
+                alt="Lamborghini Urus Performante">
+            <div class="card-title">Lamborghini Urus Performante</div>
+            <div class="card-description">El Urus Performante es la versión más deportiva del Urus, diseñada para un
+                rendimiento extremo y una experiencia de conducción superior.</div>
+        </div>
+
+        <!-- Card 4: Lamborghini Urus SE -->
+        <div class="card">
+            <img class="image-urus-se"
+                src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_gw/urus/2024/model_chooser/Model%3DUrus%20SE%2C%20Type%3DMobile.png"
+                alt="Lamborghini Urus SE">
+            <div class="card-title">Lamborghini Urus SE</div>
+            <div class="card-description">El Urus SE es la versión especial del SUV Lamborghini, combinando tecnología
+                avanzada con un diseño agresivo.</div>
+        </div>
+    </div>
 </body>
 
 </html>
